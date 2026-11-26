@@ -7,7 +7,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1591/432221.htm",
     "summary": "全校各单位： 2027年报刊杂志订阅工作已经开始，根据上级要求，结合学校实际，现将有关事项通知如下： 1.各单位结合实际…",
     "is_new": true,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "unknown"
   },
   {
@@ -18,8 +18,8 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1791/432251.htm",
     "summary": "各学院（书院）： 为贯彻落实《关于举办2026年新乡市大中小学生安全知识竞赛和“同上消防课・我来讲安全”视频征集活动的通…",
     "is_new": true,
-    "updated_at": "2026-11-26 21:39",
-    "audience": "unknown"
+    "updated_at": "2026-11-26 21:42",
+    "audience": "student"
   },
   {
     "id": "20261125-1721-432241",
@@ -29,8 +29,8 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1721/432241.htm",
     "summary": "各研究生培养单位： 为推动学校学位与研究生教育改革发展，更好地调动各研究生培养单位的工作积极性、主动性和创造性，不断提高…",
     "is_new": true,
-    "updated_at": "2026-11-26 21:39",
-    "audience": "student"
+    "updated_at": "2026-11-26 21:42",
+    "audience": "teacher"
   },
   {
     "id": "20261124-1711-431911",
@@ -40,8 +40,8 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1711/431911.htm",
     "summary": "各学院（书院）： 为深入学习贯彻习近平新时代中国特色社会主义思想和党的二十届五中全会精神，聚焦提升辅导员理论水平、职业能…",
     "is_new": true,
-    "updated_at": "2026-11-26 21:39",
-    "audience": "student"
+    "updated_at": "2026-11-26 21:42",
+    "audience": "teacher"
   },
   {
     "id": "20261123-1571-431701",
@@ -51,7 +51,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1571/431701.htm",
     "summary": "各二级党组织： 为深入学习贯彻习近平总书记关于弘扬伟大长征精神的重要论述和在纪念长征胜利90周年大会上的重要讲话精神，讲…",
     "is_new": true,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "unknown"
   },
   {
@@ -62,7 +62,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1691/431661.htm",
     "summary": "各教学单位： 根据《河南省教育厅办公室关于2026年度河南省本科高校智慧课程申报工作的通知》（教办高〔2026〕311号…",
     "is_new": true,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "unknown"
   },
   {
@@ -73,7 +73,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1841/431691.htm",
     "summary": "各二级学院（中心）： 近期，省内高校先后发生数起火情，多因乱扔烟头引燃可燃物、充电宝自燃等引发，所涉火情均被及时发现并迅…",
     "is_new": true,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "unknown"
   },
   {
@@ -84,7 +84,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1641/431031.htm",
     "summary": "各学院： 为进一步激发我校青年学生的科学探索精神，提升创新精神、创新意识和实践能力，鼓励青年学生在课外学术科技领域深入钻…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -95,7 +95,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1671/431191.htm",
     "summary": "各学院： 根据《河南省教育厅办公室关于2026年河南省本科高校青年骨干教师培养计划申报工作的通知》（教办高〔2026〕3…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "teacher"
   },
   {
@@ -106,7 +106,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1701/431061.htm",
     "summary": "各学院： 根据河南省科协《关于组织申报2027年度科普项目的通知》要求，现将2027年度科普项目申报有关事项通知如下：…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "unknown"
   },
   {
@@ -117,7 +117,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1721/431121.htm",
     "summary": "各研究生培养学院、全体研究生： 导师是研究生培养第一责任人，既是传道授业解惑的经师，也是研究生成长成才的引路人和陪伴者。…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -128,7 +128,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1791/431131.htm",
     "summary": "各学院： 为认真做好高校消防安全工作，提高师生自防自救能力，经研究决定，举办河南科技学院大学生消防安全知识竞赛，现将有关…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -139,8 +139,8 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1711/430731.htm",
     "summary": "各学院、书院： 为深化我校资助育人工作，充分发挥资助政策在学生成长成才过程中的引领作用，将诚信教育、感恩教育与成长赋能深…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
-    "audience": "unknown"
+    "updated_at": "2026-11-26 21:42",
+    "audience": "student"
   },
   {
     "id": "20261116-1831-430771",
@@ -150,7 +150,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1831/430771.htm",
     "summary": "全体师生： 随着PDF文件使用场景日渐丰富、使用频率日趋频繁，为促进知识产权保护、满足师生软件使用需求，我校和福建福昕软…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "unknown"
   },
   {
@@ -161,7 +161,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1921/430811.htm",
     "summary": "全校各单位： 按照学校有关规定，现将2026-2027采暖季采暖费和2026年物业费扣缴（11月工资）情况进行公示（详见…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "teacher"
   },
   {
@@ -172,7 +172,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1641/430391.htm",
     "summary": "各基层团委、团支部： 为积极响应国家“健康中国”战略，进一步普及健康知识，提升公众健康素养，弘扬健康文化，由校团委主办，…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -183,7 +183,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1691/430461.htm",
     "summary": "各有关单位： 为深入贯彻落实省第十二次党代会部署要求，深化教育综合改革，破解制约教育高质量发展的瓶颈，现决定开展2026…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "unknown"
   },
   {
@@ -194,7 +194,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1711/430401.htm",
     "summary": "各学院： 为进一步丰富我校心理健康教育文化载体，打造具有学校辨识度、温馨包容的心理文化标识，引导广大学生关注心理健康、培…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -205,7 +205,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1651/430181.htm",
     "summary": "各学院、各单位： 为加强习近平法治思想学习宣传，弘扬宪法精神，进一步增强青年学生的宪法意识和法治素养，根据《河南科技学院…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "unknown"
   },
   {
@@ -216,7 +216,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1711/430191.htm",
     "summary": "各位受资助同学： 近期，国家奖助学金将陆续发放到同学们提供的账号中，现将有关事项提醒如下： 一、资助资金发放情况说明 1…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -227,7 +227,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1591/429621.htm",
     "summary": "全校师生员工： 为维护良好生态环境，创建文明、美丽、和谐、平安校园，现就校内人工湖日常管理相关事宜通知如下： 一、文明参…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "unknown"
   },
   {
@@ -238,7 +238,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1701/429901.htm",
     "summary": "各有关单位： 根据《新乡市人民政府关于政府决策研究工作的若干意见》和《新乡市政府决策研究课题招标办法》，2026年度新乡…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "teacher"
   },
   {
@@ -249,7 +249,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1711/429781.htm",
     "summary": "各学院（书院）： 为充分发挥国家奖学金获奖学生的榜样示范和励志引领作用，引导广大学生坚定理想信念、勤奋学习、成长成才，营…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -260,7 +260,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1721/429611.htm",
     "summary": "各研究生培养学院： 为进一步加强研究生宿舍管理，充分发挥宿舍育人阵地作用，持续推进健康学校建设，经研究决定，在全校研究生…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -271,7 +271,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1721/429791.htm",
     "summary": "各研究生培养学院： 为进一步压实学位点建设主体责任，规范学位点运行管理，强化研究生教育内涵建设，保障学科建设、人才培养工…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "teacher"
   },
   {
@@ -282,7 +282,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1841/429441.htm",
     "summary": "各学院： 根据新乡市科学技术局《关于开展市级重点实验室专项摸排工作的通知》要求，为进一步加强我校市级重点实验室规范化管理…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "teacher"
   },
   {
@@ -293,7 +293,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1841/429451.htm",
     "summary": "各相关学院： 根据《关于组织开展农业农村部重点实验室申报推荐工作的通知》要求，为进一步完善农业农村部重点实验室体系，强化…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "unknown"
   },
   {
@@ -304,7 +304,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1591/429421.htm",
     "summary": "各基层党委、党总支、直属党支部，全校各单位： 为深入贯彻习近平新时代中国特色社会主义思想，全面贯彻落实党的二十大和二十届…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -315,7 +315,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1691/429351.htm",
     "summary": "各学院及有关单位： 2026-2027学年第二学期普通本科生课程表的编制工作定于2026年11月9日起至2026年12月…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -326,7 +326,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1701/429191.htm",
     "summary": "各学院： 为深入学习贯彻习近平总书记在河南考察时的重要讲话精神，推动省第十二次党代会有关部署落实落细，组织动员广大科技工…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "unknown"
   },
   {
@@ -337,8 +337,8 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1651/430171.htm",
     "summary": "全校各单位： 为深入学习宣传习近平法治思想，大力弘扬宪法精神，持续引导青年学生厚植宪法观念、提升法治素养，根据《河南科技…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
-    "audience": "unknown"
+    "updated_at": "2026-11-26 21:42",
+    "audience": "student"
   },
   {
     "id": "20261104-1621-429151",
@@ -348,7 +348,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1621/429151.htm",
     "summary": "各基层党委、党总支、直属党支部，全校各单位： 2026年学校职称评审工作已经启动。为进一步促进职称评审公开、公平、公正，…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "teacher"
   },
   {
@@ -359,7 +359,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1741/429051.htm",
     "summary": "各有关单位： 根据《国家重点研发计划管理暂行办法》（国科发资〔2024〕28号）相关要求，现发布“政府间国际科技创新合作…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "unknown"
   },
   {
@@ -370,7 +370,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1741/429041.htm",
     "summary": "各学院： 为丰富学生教育经历、拓宽国际化视野，深化我校与国外高校学术文化交流，我校与韩国庆尚国立大学合作开展2027年春…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "unknown"
   },
   {
@@ -381,7 +381,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1741/428981.htm",
     "summary": "各有关单位： 根据《国家重点研发计划管理暂行办法》（国科发资〔2024〕28号）相关要求，现发布“政府间国际科技创新合作…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "unknown"
   },
   {
@@ -392,7 +392,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1741/428971.htm",
     "summary": "各有关单位： 根据《中华人民共和国教育部与魁北克省政府高等教育合作协议》，2027-2028年度国家留学基金管理委员会（…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "teacher"
   },
   {
@@ -403,7 +403,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1761/428561.htm",
     "summary": "全校各单位： 为进一步加强学校国有资产管理，规范资产占有、使用行为，提升国有资产管理水平，根据《河南省省属本科高校国有资…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "teacher"
   },
   {
@@ -414,7 +414,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1641/428491.htm",
     "summary": "各学院团委： 为丰富校园文化生活，引导广大 同学 发现校园之美、记录 生活 美好 瞬间，用镜头定格秋日校园风光与温暖人文…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -425,7 +425,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1741/428441.htm",
     "summary": "各学院： 为丰富学生教育经历、拓宽国际化视野，深化我校与国外高校学术文化交流，我校与马来西亚博特拉大学（Universi…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "unknown"
   },
   {
@@ -436,7 +436,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1691/428341.htm",
     "summary": "各学院： 为深入贯彻落实《深化新时代教育评价改革总体方案》和《河南省高等教育教学综合改革试点实施方案》有关部署，深化考试…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "unknown"
   },
   {
@@ -447,7 +447,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1691/428011.htm",
     "summary": "各学院： 为提升本科毕业论文（设计）整体质量，依据《河南科技学院本科生毕业论文（设计）工作管理规定（修订）》（校发字〔2…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -458,7 +458,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1711/427701.htm",
     "summary": "各学院（书院）： 为深入学习贯彻习近平新时代中国特色社会主义思想，全面实施新时代立德树人工程，构建全员育心工作格局，营造…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -469,7 +469,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1711/427091.htm",
     "summary": "各学院、书院： 为贯彻党中央、国务院及省委、省政府关于高校毕业生就业工作相关部署，落实生涯教育与就业指导工作要求，增强大…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -480,7 +480,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1711/426831.htm",
     "summary": "各学院、书院： 根据河南省教育厅办公室《转发教育部关于开展第五期供需对接就业育人项目的通知》（教学函〔2026〕563…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -491,7 +491,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1711/426981.htm",
     "summary": "各学院、书院： 根据省教育厅《关于开展 2026 届高校毕业生就业创业经验案例征集工作的通知》工作部署，为全面总结我校毕…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -502,7 +502,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1691/426591.htm",
     "summary": "各学院： 根据《教育部高等教育司关于做好第十九届全国大学生创新年会准备工作的通知》及《河南省教育厅办公室关于做好第十九届…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -513,7 +513,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1711/426471.htm",
     "summary": "各学院（书院）： 根据《校长奖学金评选办法（试行）》（校发字〔2024〕18号）文件精神，现将我校2026年校长奖学金评…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -524,7 +524,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1691/426251.htm",
     "summary": "各学院： 大学生数字媒体科技作品及创意竞赛入选教育部高等教育教学学会大学生学科竞赛排行榜单，是引领大学生创新创业、提升实…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -535,7 +535,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1711/425891.htm",
     "summary": "尊敬的用人单位： 衷心感谢贵单位长期以来对我校毕业生的厚爱以及对我校就业创业工作的关心与支持！ 为进一步深化与各用人单位…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -546,7 +546,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1691/425411.htm",
     "summary": "各人才培养单位： 为贯彻落实《教育部等六部门关于加强普通本科高校大学生实习工作的意见》（教高〔2026〕1号）文件精神，…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -557,7 +557,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1711/425071.htm",
     "summary": "各学院： 中秋、国庆假期来临，为切实做好我校学生的心理援助与服务，确保学生的心理服务不断线，心理健康教育与指导中心将开展…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -568,7 +568,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1711/424731.htm",
     "summary": "各学院： 为深入了解2026级学生的思想动态情况，按照学校工作部署 ， 对我校2026级学生开展思想动态调查 ，现将有关…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -579,7 +579,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1711/424631.htm",
     "summary": "各学院： 根据河南省教育厅办公室《关于开展2026年全省大学生国家安全知识竞赛暨学生素养展示活动的通知》（教思政函〔20…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -590,7 +590,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1711/424641.htm",
     "summary": "各学院： 为切实做好2026年中秋节、国庆节假期学生安全教育与管理工作，维护校园安全稳定，保障广大学生度过一个平安、祥和…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -601,7 +601,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1691/424321.htm",
     "summary": "各学院： 为深耕校园文脉、彰显学术风貌、传承弘扬“百农精神”，充分展现河南科技学院办学底蕴与学科特色，现面向全校师生公开…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -612,7 +612,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1711/424411.htm",
     "summary": "各学院、书院： 为做好毕业生就业服务保障，精准推送就业政策、招聘岗位、宣讲及招聘会相关通知，保障毕业生顺利办理网上签约、…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -623,7 +623,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1691/424161.htm",
     "summary": "各学院： 为着力锻炼大学生金融实操能力，帮助同学们建立理性的投资理财思维，提升风险防范意识与综合实践素养，现举办河南科技…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -634,7 +634,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1691/424221.htm",
     "summary": "各学院： 为贯彻落实《关于新时代立德树人工程的实施意见》《教育发展“十五五”规划》等文件精神，塑造立德树人新格局，推动课…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "unknown"
   },
   {
@@ -645,7 +645,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1691/423821.htm",
     "summary": "各学院： 为全面贯彻党的二十大和二十届历次全会精神，深入学习贯彻习近平文化思想，聚焦“两高四着力”，对标“设计河南”，服…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -656,7 +656,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1691/423691.htm",
     "summary": "各学院 ： 为保障复学、转专业等学籍异动学生能够顺利完成学业，根据本学期教学工作安排，现将复学、转专业等学籍异动学生补修…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -667,7 +667,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1711/423671.htm",
     "summary": "各学院、书院： 根据《关于做好2026-2027学年勤工助学固定岗位换岗工作的通知》要求，经缺岗单位申报，全校共空缺勤工…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -678,7 +678,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1691/422801.htm",
     "summary": "各相关学院： 根据全国师范院校师范生教学技能竞赛组委会《关于举办第十二届“田家炳杯”全国师范院校师范生教学技能竞赛的通知…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -689,7 +689,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1711/422711.htm",
     "summary": "各学院、书院： 为做好2026年全校家庭经济困难学生认定工作，根据河南省教育厅《关于做好2026年高校学生国家奖助学金评…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -700,7 +700,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1711/422761.htm",
     "summary": "各学院、书院： 根据河南省学生资助中心《关于做好2026年高校国家奖助学金评审发放工作的通知》（豫教资[2026]23号…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -711,7 +711,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1711/422661.htm",
     "summary": "全校各单位： 根据河南省教育厅办公室《关于开展全省高校就业创业工作专家库专家选聘工作的通知》（教学函〔2026〕483号…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "teacher"
   },
   {
@@ -722,7 +722,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1711/422671.htm",
     "summary": "全校各用工单位、各学院、书院： 为使我校勤工助学工作顺利开展，让更多家庭经济困难学生有机会参加勤工助学，帮助他们顺利完成…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -733,7 +733,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1691/422361.htm",
     "summary": "各学院： “外研社·国才杯”全国大学生外语能力大赛已成功举办二十余年。在不断创新发展的基础上，2026年大赛被赋予新的时…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -744,7 +744,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1711/422401.htm",
     "summary": "各学院： 根据《河南科技学院学生奖学金评定办法（修订）》（校发字〔2019〕141号）文件精神，现将2025—2026学…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -755,7 +755,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1711/422431.htm",
     "summary": "各学院、书院： 为认真做好新学期学生管理工作，进一步提高学生工作的针对性和成效性，全面真实掌握学生思想动态，特别是暑假后…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -766,7 +766,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1711/422471.htm",
     "summary": "各学院、书院： 为进一步巩固阶段性学生管理工作成效，全面摸清学生思想动态，及时查找学生工作中存在的问题与不足，细化优化管…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "teacher"
   },
   {
@@ -777,7 +777,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1711/422261.htm",
     "summary": "各学院： 暑期即将结束，为帮助学生及时调整心理状态，顺利融入校园学习生活，心理健康教育与指导中心特策划开展“心能续航·点…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "unknown"
   },
   {
@@ -788,7 +788,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1711/422271.htm",
     "summary": "各学院： 为深入贯彻落实立德树人根本任务，全面践行“健康第一”的教育理念，进一步健全校园心理健康教育服务体系，常态化、规…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -799,7 +799,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1691/422181.htm",
     "summary": "各学院： 为保障2026年秋季学期教学工作平稳有序开展，确保全体师生按时领取教材、顺利开课，结合学校开学工作安排，现将本…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -810,7 +810,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1711/421851.htm",
     "summary": "全校各单位： 根据《河南省教育厅办公室转发教育部学生服务与素质发展中心关于开展2026年宏志助航计划线上课程建设课题申报…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "unknown"
   },
   {
@@ -821,7 +821,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1711/421841.htm",
     "summary": "各学院、书院： 为了贯彻落实“不让一名学生因家庭困难而失学”的工作目标，完善覆盖全学段学生资助体系，我校在新生报到时将开…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -832,7 +832,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1711/421811.htm",
     "summary": "为全面做好2026年秋季学期开学各项准备工作，确保新学期各项工作平稳、有序、高效运行，营造安全、文明、和谐的校园环境，促…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -843,7 +843,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1711/421741.htm",
     "summary": "各学院、书院： 为进一步贯彻落实教育部关于全面推进健康学校建设的指导意见，加强大学生心理健康教育，引导大学生看见情绪背后…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -854,7 +854,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1691/420441.htm",
     "summary": "各学院： 近期，教育部下发了《关于举办中国国际大学生创新大赛（2026）的通知》（教高函〔2026〕26号），定于202…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -865,7 +865,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1711/420331.htm",
     "summary": "各学院、书院： 为深入学习贯彻习近平新时代中国特色社会主义思想，落实国务院办公厅《关于进一步支持大学生创新创业的指导意见…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "teacher"
   },
   {
@@ -876,7 +876,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1691/420031.htm",
     "summary": "各学院： 为扎实推进2026年河南省“豫你携手·创赢未来”大学生创新创业大赛揭榜领题赛道组织实施工作，畅通校企资源对接渠…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -887,7 +887,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1711/419471.htm",
     "summary": "各学院、书院： 根据省资助管理中心通知，为生动展现国家助学贷款政策实施成效，记录受助学子在政策护航下逐梦成长的真实历程，…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -898,7 +898,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1711/419351.htm",
     "summary": "各学院： 为深入学习贯彻党的二十届四中全会精神，传承和弘扬“百农精神”，强化我校学工干部队伍建设，提升学工干部育人能力与…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "unknown"
   },
   {
@@ -909,7 +909,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1711/419341.htm",
     "summary": "各学院： 根据河南省人力资源和社会保障厅、河南省教育厅、河南省财政厅、河南省民政厅、河南省残疾人联合会《关于做好2026…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -920,7 +920,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1711/418731.htm",
     "summary": "各位家长朋友，您好！ 见字如面，展信舒颜。夏日悠长，蝉鸣阵阵，孩子们带着一学期的收获与疲惫，回到了熟悉的家乡。首先，河南…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "unknown"
   },
   {
@@ -931,7 +931,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1711/418641.htm",
     "summary": "各学院： 暑假期间，为切实做好我校学生的心理援助与服务，确保学生的心理服务不断线，心理健康教育与指导中心将开展线上心理咨…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -942,7 +942,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1691/418591.htm",
     "summary": "全校各单位： 为进一步落实教育强国建设任务，推动高等教育高质量发展，提高教师教书育人能力，强化科技教育和人文教育协同，持…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "teacher"
   },
   {
@@ -953,7 +953,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1711/416471.htm",
     "summary": "各学院、书院： 为进一步贯彻落实教育部关于全面推进健康学校建设的指导意见，加强大学生心理健康教育，引导学生把青春迷茫转化…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -964,7 +964,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1711/416461.htm",
     "summary": "各学院、书院： 根据教育部办公厅、财政部办公厅《关于做好2026年农村义务教育阶段学校教师特设岗位计划实施工作的通知》（…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "teacher"
   },
   {
@@ -975,7 +975,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1711/416451.htm",
     "summary": "各学院、书院： 为认真贯彻落实国家及我省有关助学贷款的要求，现就做好我校2026年度国家助学贷款工作通知如下。 一、做好…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -986,7 +986,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1711/416251.htm",
     "summary": "各学院、书院： 为总结我校在资助工作中的先进经验和特色做法，发挥资助育人工作的示范引领作用，持续提升学生资助育人工作成效…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -997,7 +997,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1691/416261.htm",
     "summary": "各学院： 为深入贯彻党的二十大和二十届历次全会精神，落实国家通用语言文字法、民族团结进步促进法和《全民阅读促进条例》，实…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -1008,7 +1008,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1691/415711.htm",
     "summary": "各教学单位： 为做好2026年秋季教材选用和征订工作，确保优质教材进入本科课堂，依据《河南科技学院教材建设与管理实施细则…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -1019,7 +1019,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1691/414381.htm",
     "summary": "各基层党委、党总支，全校各单位： 按照《河南科技学院关于开展“实干开新局铸魂育新人”师德主题教育活动的通知》（党办字〔2…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "teacher"
   },
   {
@@ -1030,7 +1030,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1691/412581.htm",
     "summary": "各有关学院： 为深入学习贯彻习近平总书记关于教育的重要论述，造就支撑教育强国的高素质教师队伍，依据《河南省师范教育质量提…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -1041,7 +1041,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1691/412601.htm",
     "summary": "各学院： 为做好 2026-2027 学年第一学期选课工作， 保障选课质量，我校将 2026-2027学年第一学期选课工…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -1052,7 +1052,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1691/410621.htm",
     "summary": "各学院： 为做好2026-2027学年第一学期选课工作，保障选课质量，我校将2026-2027学年第一学期选课工作分为三…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -1063,7 +1063,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1691/410441.htm",
     "summary": "各相关部门： 为全面了解我校本科教学运行情况，持续加强本科教学过程质量监控与管理，根据本学期教学工作整体安排，学校将于5…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "unknown"
   },
   {
@@ -1074,7 +1074,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1691/410341.htm",
     "summary": "各学院： 为深入学习宣传贯彻习近平新时代中国特色社会主义思想，贯彻落实党的二十大和二十届历次全会精神、习近平总书记关于金…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -1085,7 +1085,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1691/410071.htm",
     "summary": "各相关单位： 为深入贯彻落实立德树人根本任务，进一步巩固人才培养的中心地位及教学工作的基础地位，学校决定组织开展2026…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "unknown"
   },
   {
@@ -1096,7 +1096,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1691/409981.htm",
     "summary": "各学院： 为深入贯彻落实人工智能赋能教育行动，主动应对人工智能对高等教育和人才培养的变革影响，进一步提高大学生数字素养和…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "unknown"
   },
   {
@@ -1107,7 +1107,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1691/409611.htm",
     "summary": "各相关单位： 学期教学安排是落实培养方案的重要环节，课程表、教学进程表的编排是组织教学活动的依据，为保障2026-202…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -1118,7 +1118,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1691/409391.htm",
     "summary": "各学院： 根据《河南省教育厅办公室关于开展2026年大学生创新训练计划立项和结题验收的通知》（教办高〔2026〕110号…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -1129,8 +1129,8 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1691/409101.htm",
     "summary": "各教学单位： 为深入贯彻落实立德树人根本任务，全面推进我校课程思政建设，系统挖掘各学科专业课程思政建设的典型经验和优秀成…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
-    "audience": "unknown"
+    "updated_at": "2026-11-26 21:42",
+    "audience": "student"
   },
   {
     "id": "20260420-1691-407361",
@@ -1140,7 +1140,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1691/407361.htm",
     "summary": "校内各相关单位： 根据河南省教育厅、河南省人力资源和社会保障厅印发的《河南省教育系统落实“人人持证、技能河南”建设工作任…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "unknown"
   },
   {
@@ -1151,7 +1151,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1691/407111.htm",
     "summary": "各学院： 为进一步提升我校大学生商业综合能力和新商科人才培养质量，提高参赛同学创新、创业、创造能力，我校拟举办2026年…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -1162,7 +1162,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1691/406141.htm",
     "summary": "各学院： 为落实《教育部等六部门关于加强普通本科高校大学生实习工作的意见》（教高〔2026〕1号）文件精神，根据《教育部…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -1173,7 +1173,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1691/405831.htm",
     "summary": "为深入学习贯彻党的二十大和二十届四中全会精神，全面落实习近平总书记给中国国际大学生创新大赛参赛学生代表的重要回信精神，按…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -1184,7 +1184,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1691/405041.htm",
     "summary": "各学院： 全国大学生金相技能大赛是教育部“全国普通高校大学生竞赛排行榜”榜单内竞赛项目，每年举办一届。为了贯彻“以赛促教…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -1195,7 +1195,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1691/404831.htm",
     "summary": "全校各相关单位： 为鼓励教育工作者开展教育教学研究，深化教育教学改革，提高人才培养质量，根据河南省教育厅《河南省高等教育…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "unknown"
   },
   {
@@ -1206,7 +1206,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1691/403871.htm",
     "summary": "各学院： 为进一步调动学生学习的自觉性与积极性，尊重学生个人兴趣与职业规划，提升人才培养质量，根据《河南科技学院普通本专…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   },
   {
@@ -1217,7 +1217,7 @@ window.SCHOOL_DATA = [
     "source_url": "https://www.hist.edu.cn/info/1691/402301.htm",
     "summary": "各学院： 全国大学生英语竞赛（ 简称NECCS ）是经教育部批准举办的全国唯一的大学英语综合能力竞赛活动，是我国大学英语…",
     "is_new": false,
-    "updated_at": "2026-11-26 21:39",
+    "updated_at": "2026-11-26 21:42",
     "audience": "student"
   }
 ];
