@@ -1,0 +1,133 @@
+/* ==========================================================================
+   启动动画：麦金逐字显现 → 柔和淡出
+   仅首屏使用，约 1.8s 后自动移除
+   ========================================================================== */
+
+html.loader-lock,
+body.loader-active { overflow: hidden; }
+
+body.loader-active { background: var(--paper); }
+
+.site-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  isolation: isolate;
+  color: var(--ink);
+  background: var(--paper);
+  transition: opacity 0.9s cubic-bezier(0.4, 0, 0.2, 1), visibility 0s linear 0.9s;
+  will-change: opacity;
+}
+
+.site-loader::before {
+  content: "";
+  position: absolute;
+  inset: -22% -12%;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(42% 52% at 22% 18%, rgba(226, 188, 108, 0.5), transparent 64%),
+    radial-gradient(38% 46% at 82% 12%, rgba(201, 160, 63, 0.34), transparent 66%),
+    radial-gradient(56% 62% at 58% 108%, rgba(150, 105, 34, 0.32), transparent 70%),
+    radial-gradient(34% 40% at 8% 88%, rgba(184, 132, 63, 0.28), transparent 72%);
+  filter: blur(34px);
+  animation: loaderAurora 24s ease-in-out infinite alternate;
+}
+
+html[data-theme="dark"] .site-loader::before {
+  background:
+    radial-gradient(42% 52% at 22% 18%, rgba(226, 188, 108, 0.26), transparent 64%),
+    radial-gradient(38% 46% at 82% 12%, rgba(201, 160, 63, 0.2), transparent 66%),
+    radial-gradient(56% 62% at 58% 108%, rgba(120, 82, 24, 0.36), transparent 70%),
+    radial-gradient(34% 40% at 8% 88%, rgba(184, 132, 63, 0.18), transparent 72%);
+}
+
+@keyframes loaderAurora {
+  from { transform: translate3d(-2%, -1%, 0) scale(1); }
+  to { transform: translate3d(3%, 2%, 0) scale(1.07); }
+}
+
+.site-loader__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(18px, 3.2vh, 30px);
+  padding: 0 24px;
+  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.loader-letters {
+  display: flex;
+  font-family: var(--font-brush);
+  font-size: clamp(64px, 13vw, 184px);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+
+.loader-letter {
+  display: inline-block;
+  padding: 0 0.02em;
+  opacity: 0;
+  filter: blur(14px);
+  transform: translateY(0.26em) scale(0.98);
+  background: linear-gradient(180deg, var(--gold-hi) 8%, var(--gold) 62%, var(--gold-lo) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: loaderLetter 0.92s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation-delay: calc(0.12s + var(--i) * 0.09s);
+}
+
+@keyframes loaderLetter {
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: none;
+  }
+}
+
+.loader-sub {
+  font-size: clamp(11px, 1.2vw, 13px);
+  font-family: var(--font-mono);
+  letter-spacing: 0.34em;
+  text-indent: 0.34em;
+  color: var(--ink-3);
+  opacity: 0;
+  transform: translateY(8px);
+  animation: loaderSub 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.72s forwards;
+}
+
+@keyframes loaderSub {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.site-loader.is-leaving {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.site-loader.is-leaving .site-loader__inner {
+  opacity: 0;
+  transform: scale(1.04);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-loader { transition-duration: 0.3s; }
+  .site-loader::before { animation: none; }
+  .loader-letter,
+  .loader-sub {
+    animation: none !important;
+    opacity: 1 !important;
+    filter: none !important;
+    transform: none !important;
+  }
+  .site-loader__inner { transition-duration: 0.3s; }
+}

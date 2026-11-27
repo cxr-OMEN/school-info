@@ -17,9 +17,14 @@ const UA = 'Mozilla/5.0 (compatible; campus-info-crawler/1.0; student project)';
 const MAX_DAYS_NEW = 7;
 const SUMMARY_LEN = 60;
 
+// 兜底规则：仅在 data/audience_rules.json 缺失时使用。
+// 内容与 audience_rules.json 保持一致，改动时请同步两处（不一致会导致静默回退到旧表）。
 const DEFAULT_RULES = {
-  teacher: ['教师', '教职工', '教工', '师德', '师资', '职称', '工资', '采暖', '物业费', '绩效', '聘任', '遴选', '人才引进', '博士后', '骨干教师', '班主任', '课堂教学创新', '教学名师'],
-  student: ['学生', '大学生', '本科生', '在校生', '新生', '毕业生', '同学', '奖学金', '助学金', '勤工助学', '助学贷款', '选课', '教材', '课表', '学籍', '双选会', '心理健康', '心理咨询', '宿舍', '军训', '考研', '专升本', '毕业设计', '毕业论文', '学位服', '全体研究生'],
+  teacher: ['教师', '教职工', '教工', '师德', '师资', '职称', '工资', '采暖', '物业费', '绩效', '聘任', '人才引进', '博士后', '骨干教师', '班主任', '课堂教学创新', '教学名师', '研究生导师', '教改', '课改', '科研项目', '实验室建设', '学位点', '经费', '招标', '专项摸排', '科级干部', '研判', '专家库', '辅导员', '先进单位'],
+  student: ['学生', '大学生', '本科生', '在校生', '研究生', '新生', '毕业生', '同学', '奖助学金', '助学金', '奖学金', '困难认定', '助学贷款', '勤工助学', '选课', '课表', '考试', '补考', '重修', '四六级', '毕业', '学位', '实习', '就业', '双选会', '挑战杯', '竞赛', '大赛', '社团', '宿舍', '心理健康', '心理咨询', '体检', '医保', '接种', '军训', '开学', '注册', '学籍', '教材', '宣传月', '诵写讲', '师范生', '教学技能大赛', '创意河南', '维普杯', '技能竞赛', '征文', '摄影比赛', '宣传教育活动', '安全教育', '思想动态', '学情', '换岗', '空缺岗位', '国奖', '传染', '讲座', '报名', '比赛', '征集'],
+  teacher_strong: ['辅导员', '科级干部', '教职工', '师德', '师资', '职称', '工资', '采暖', '物业费', '绩效', '骨干教师', '课堂教学创新', '教学名师', '研究生导师', '先进单位', '专家库', '学位点', '研判', '专项摸排', '经费', '招标'],
+  student_strong: ['大学生', '本科生', '在校生', '新生', '毕业生', '同学', '师范生', '奖助学金', '助学金', '奖学金', '困难认定', '助学贷款', '勤工助学', '选课', '课表', '四六级', '双选会', '挑战杯', '宿管', '心理健康', '心理咨询', '军训', '学籍', '毕业设计', '毕业论文', '国奖'],
+  student_terms: ['特岗教师', '教师资格证', '教师资格考试', '教师招聘'],
   ignore: ['各学院', '各学院（书院）', '各书院', '各单位', '各部门', '全校各单位', '各研究生培养单位']
 };
 
@@ -55,7 +60,25 @@ function loadAudienceRules() {
     if (!Array.isArray(parsed[key])) throw new Error(`分众规则 ${RULES_FILE} 的 ${key} 必须是字符串数组`);
     return parsed[key];
   };
-  return { teacher: pick('teacher'), student: pick('student'), ignore: pick('ignore') };
+  // 规则文件存在但缺少某个 key 时会静默回退到内置表，漂移很难被发现，这里显式提示。
+  const declared = ['teacher', 'student', 'ignore'];
+  const optional = ['teacher_strong', 'student_strong', 'student_terms'];
+  const missingRequired = declared.filter((k) => !(k in parsed));
+  if (missingRequired.length) {
+    console.warn(`[crawl] 警告：${RULES_FILE} 缺少 ${missingRequired.join(' / ')}，这些项回退到内置规则`);
+  }
+  const missingOptional = optional.filter((k) => !(k in parsed));
+  if (missingOptional.length) {
+    console.warn(`[crawl] 警告：${RULES_FILE} 缺少 ${missingOptional.join(' / ')}，冲突判定将退化为「两边都命中即 unknown」`);
+  }
+  return {
+    teacher: pick('teacher'),
+    student: pick('student'),
+    ignore: pick('ignore'),
+    teacher_strong: pick('teacher_strong'),
+    student_strong: pick('student_strong'),
+    student_terms: pick('student_terms')
+  };
 }
 
 const RULES = loadAudienceRules();
@@ -172,11 +195,34 @@ function makeSummary(text) {
   return text.slice(0, SUMMARY_LEN).trimEnd() + '…';
 }
 
+// 强学生信号：通知明确把学生作为主体，命中时应当压过 teacher 里的宽泛词
+// （例如「大学生…遴选结果」「特岗教师招聘报名」里的「遴选」「教师」）。
+const STUDENT_STRONG_RE = buildRegex(RULES.student_strong || []);
+// 强教师信号：命中时即使标题里出现「学生」也归教师
+// （例如「关于做好学生工作的通知」发给学工队伍、「辅导员素质能力大赛」）。
+const TEACHER_STRONG_RE = buildRegex(RULES.teacher_strong || []);
+// 学生专有名词：这些词里的「教师」是固定搭配，不代表受众是教师。
+// 例如「特岗教师招聘报名」实际面向应届毕业生报名，「教师资格证考试」面向学生。
+const STUDENT_TERM_RE = buildRegex(RULES.student_terms || []);
+
 function classifyAudience(title) {
   let text = title;
   for (const term of IGNORE_TERMS) text = text.split(term).join(' ');
-  if (TEACHER_RE && TEACHER_RE.test(text)) return 'teacher';
-  if (STUDENT_RE && STUDENT_RE.test(text)) return 'student';
+
+  // 先把学生专有名词抹掉，避免其中的「教师」触发 teacher 判定。
+  const teacherText = STUDENT_TERM_RE ? text.replace(STUDENT_TERM_RE, ' ') : text;
+  const isTeacher = Boolean(TEACHER_RE && TEACHER_RE.test(teacherText));
+  const isStudent = Boolean(STUDENT_RE && STUDENT_RE.test(text));
+  if (!isTeacher && !isStudent) return 'unknown';
+  if (isTeacher && !isStudent) return 'teacher';
+  if (isStudent && !isTeacher) return 'student';
+
+  // 两边都命中：按强信号消解冲突，仍然分不出就归到 unknown（折叠区），
+  // 宁可少显示，也不把教师通知推给学生。
+  const strongStudent = Boolean(STUDENT_STRONG_RE && STUDENT_STRONG_RE.test(text));
+  const strongTeacher = Boolean(TEACHER_STRONG_RE && TEACHER_STRONG_RE.test(text));
+  if (strongStudent && !strongTeacher) return 'student';
+  if (strongTeacher && !strongStudent) return 'teacher';
   return 'unknown';
 }
 
