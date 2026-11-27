@@ -105,7 +105,7 @@
     briefMonth: $('briefMonth'),
     briefWeek: $('briefWeek'),
     briefUpdated: $('briefUpdated'),
-    briefUpdatedLabel: $('briefUpdatedLabel'),
+    liveClock: $('liveClock'),
     themeToggle: $('themeToggle')
   };
 
@@ -377,8 +377,13 @@
       const checked = state.status === 'ready' ? latestChecked() : '';
       const shown = checked || updated;
       dom.briefUpdated.textContent = shown ? shown.slice(5) : '—';
-      if (dom.briefUpdatedLabel) dom.briefUpdatedLabel.textContent = checked ? '最近检查' : '数据更新';
     }
+  }
+
+  function updateClock() {
+    if (!dom.liveClock) return;
+    const now = new Date();
+    dom.liveClock.textContent = pad2(now.getHours()) + ':' + pad2(now.getMinutes()) + ':' + pad2(now.getSeconds());
   }
 
   /* 统计卡片图标：SVG，24×24，stroke 1.8，currentColor */
@@ -886,10 +891,11 @@
       return;
     }
     const parts = [];
-    const updated = latestUpdated();
-    if (updated) parts.push('数据更新于 ' + updated);
     const checked = latestChecked();
-    if (checked && checked !== updated) parts.push('最近检查 ' + checked);
+    const updated = latestUpdated();
+    const refreshed = checked || updated;
+    if (refreshed) parts.push('数据更新于 ' + refreshed);
+    if (checked && updated && checked !== updated) parts.push('通知变更于 ' + updated);
     parts.push('共 ' + availableItems().length + ' 条信息');
     dom.footerStatus.textContent = parts.join(' · ');
   }
@@ -1220,5 +1226,7 @@
     new ResizeObserver(syncFilterOffset).observe(filterbar);
   }
 
+  updateClock();
+  setInterval(updateClock, 1000);
   loadFromScript();
 })();

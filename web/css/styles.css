@@ -513,7 +513,7 @@ html[data-theme="dark"] .theme-toggle .icon-moon { opacity: 0; transform: scale(
 
 .hero__op { display: inline-flex; align-items: baseline; gap: 6px; white-space: nowrap; }
 .hero__op-k { color: rgba(255, 240, 210, 0.55); }
-.hero__op-v { color: var(--gold-hi); font-weight: 600; }
+.hero__op-v { color: var(--gold-hi); font-weight: 600; font-variant-numeric: tabular-nums; }
 .hero__op-sep { width: 1px; height: 12px; background: rgba(255, 240, 210, 0.24); }
 .hero__op-link {
   color: var(--gold-hi);
