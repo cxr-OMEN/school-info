@@ -380,21 +380,36 @@ async function main() {
   }, {});
   console.log(`[crawl] 合并后共 ${merged.length} 条（student ${counts.student || 0} / unknown ${counts.unknown || 0} / teacher ${counts.teacher || 0}），失败 ${failed} 条`);
 
-  if (!changed) {
-    console.log('[crawl] 没有新内容，未修改数据文件');
-    return;
-  }
   if (opts.dryRun) {
-    console.log(`[crawl] --dry-run：将写入 ${created.length} 条新数据，未落盘`);
+    console.log(changed
+      ? `[crawl] --dry-run：将写入 ${created.length} 条新数据，未落盘`
+      : '[crawl] --dry-run：没有新内容，未落盘');
     return;
   }
 
-  const out = merged.map((r) => recordOf({ ...r, updated_at: stamp }));
-  fs.writeFileSync(dataFile, `window.SCHOOL_DATA = ${JSON.stringify(out, null, 2)};\n`, 'utf8');
-  const marker = path.resolve(path.dirname(dataFile), '..', '..', '.pending-publish');
-  fs.writeFileSync(marker, `${stamp}\n`, 'utf8');
-  console.log(`[crawl] 已写入 ${dataFile}（更新于 ${stamp}）`);
-  console.log(`[crawl] 已标记待发布：${marker}`);
+  if (changed) {
+    const out = merged.map((r) => recordOf({ ...r, updated_at: stamp }));
+    fs.writeFileSync(dataFile, `window.SCHOOL_DATA = ${JSON.stringify(out, null, 2)};\n`, 'utf8');
+    const marker = path.resolve(path.dirname(dataFile), '..', '..', '.pending-publish');
+    fs.writeFileSync(marker, `${stamp}\n`, 'utf8');
+    console.log(`[crawl] 已写入 ${dataFile}（更新于 ${stamp}）`);
+    console.log(`[crawl] 已标记待发布：${marker}`);
+  } else {
+    console.log('[crawl] 没有新内容，未修改数据文件');
+  }
+
+  // 数据未变化时也记录检查时间，页面可据此显示「最近检查」。
+  const lastChanged = changed
+    ? stamp
+    : merged.reduce((latest, r) => (r.updated_at > latest ? r.updated_at : latest), '');
+  const statusFile = path.resolve(path.dirname(dataFile), 'status.js');
+  const status = {
+    last_checked_at: stamp,
+    last_changed_at: lastChanged || stamp,
+    total: merged.length
+  };
+  fs.writeFileSync(statusFile, `window.SCHOOL_STATUS = ${JSON.stringify(status, null, 2)};\n`, 'utf8');
+  console.log(`[crawl] 已更新检查时间 ${stamp}（数据变更：${changed ? '是' : '否'}）`);
 }
 
 main().catch((err) => {

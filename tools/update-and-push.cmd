@@ -17,8 +17,8 @@ if errorlevel 1 (
   exit /b 1
 )
 
-git add web/data/school_data.js
-git diff --cached --quiet -- web/data/school_data.js
+git add web/data/school_data.js web/data/status.js
+git diff --cached --quiet -- web/data/school_data.js web/data/status.js
 if errorlevel 1 (
   git -c user.name="campus-info-bot" -c user.email="campus-info-bot@users.noreply.github.com" commit -m "chore(data): auto-update notices" >>"%LOG%" 2>&1
   if errorlevel 1 (

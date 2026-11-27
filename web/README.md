@@ -24,10 +24,13 @@ npx serve web
 
 ```html
 <script src="./data/school_data.js"></script>
+<script src="./data/status.js"></script>
 <script src="./js/app.js"></script>
 ```
 
 `data/school_data.js` 的内容形如 `window.SCHOOL_DATA = [ ... ]`，顶层为数组。页面从 `window.SCHOOL_DATA` 读取。该文件由 `tools/crawler/crawl.mjs` 每小时增量生成（见下文），也可以手动覆盖，前端代码无需改动。
+
+`data/status.js` 记录每次检查的时间，内容形如 `window.SCHOOL_STATUS = { last_checked_at, last_changed_at, total }`。即使没有新通知也会更新，页面用它在页脚显示「最近检查」。
 
 每条记录的 `audience` 字段决定展示方式：
 
@@ -47,7 +50,7 @@ npx serve web
 - 「更多通知」：`unknown` 通知折叠区，默认收起；点击查看即视为确认接收，确认后移出待确认列表（保存在本地）
 - 本地搜索：标题 + 摘要，支持空格分隔多个关键词，命中词高亮，覆盖主列表与「更多通知」
 - 详情弹窗：点击卡片或标题打开，含完整摘要与「前往官网原文」；支持 Esc / 点遮罩关闭
-- 状态可见：空数据兜底、数据文件未加载提示 + 重试、页面底部「数据更新于 X」
+- 状态可见：空数据兜底、数据文件未加载提示 + 重试、页面底部「数据更新于 X · 最近检查 Y」
 - 响应式：手机单列、≥820px 双列；移动端弹窗为底部抽屉；触控目标 ≈44px
 - 其他：`/` 聚焦搜索、回到顶部、`prefers-reduced-motion` 适配、打印样式
 
@@ -61,9 +64,9 @@ node tools/crawler/crawl.mjs --pages=2 --dry-run   # 只看结果不落盘
 ```
 
 - 增量：按 `source_url` / 标题去重，已有记录不重复抓取；已有 `audience` 标签原样保留，只对新增条目按标题关键词自动判断，拿不准的一律归入 `unknown`（显示在「更多通知」）
-- 摘要：取详情页正文前 60 字；`is_new` 按通知日期 3 天内自动计算；无新增时不会改写文件，页脚「数据更新于」保持上次真实变更时间
+- 摘要：取详情页正文前 60 字；`is_new` 按通知日期 3 天内自动计算；无新增时不会改写数据文件，页脚「数据更新于」保持上次真实变更时间，但会刷新 `status.js` 的「最近检查」时间
 - 礼貌抓取：固定 UA、请求间隔 1 秒、失败重试 3 次；官网没有 `robots.txt`（返回 404 页面），仍建议保持低频率
-- 每小时链路：GitHub 的海外 runner 访问 `hist.edu.cn` 会 `fetch failed`，因此采集放在本机。Windows 计划任务 `CampusInfoHub hourly update` 每小时第 25 分钟运行 `tools/update-and-push.cmd`：增量抓取 → 有变更才提交 → 推送到 `main`；`web/**` 的推送会触发 `.github/workflows/pages.yml` 自动发布到 GitHub Pages
+- 每小时链路：GitHub 的海外 runner 访问 `hist.edu.cn` 会 `fetch failed`，因此采集放在本机。Windows 计划任务 `CampusInfoHub hourly update` 每小时第 25 分钟运行 `tools/update-and-push.cmd`：增量抓取 → 更新检查时间 → 提交并推送到 `main`；`web/**` 的推送会触发 `.github/workflows/pages.yml` 自动发布到 GitHub Pages。因此没有新通知时也会每小时产生一次提交和部署，用来刷新「最近检查」
 - 运行条件：本机保持开机并处于登录状态；日志见 `%LOCALAPPDATA%\campus-info-hub\update.log`。临时停机不会丢数据，下次运行会按增量补齐
 - 手动补跑：`schtasks /Run /TN "CampusInfoHub hourly update"`，或直接执行 `tools\update-and-push.cmd`
 
@@ -76,6 +79,7 @@ node tools/crawler/crawl.mjs --pages=2 --dry-run   # 只看结果不落盘
 │   ├── css/styles.css        # 全部样式（无外部字体/图片）
 │   ├── js/app.js             # 数据读取、audience 分层、筛选、渲染、弹窗
 │   ├── data/school_data.js   # 爬虫生成的 window.SCHOOL_DATA
+│   ├── data/status.js        # 最近检查时间 window.SCHOOL_STATUS
 │   └── README.md
 ├── tools/crawler/crawl.mjs   # 官网通知增量爬虫（Node ≥ 18）
 ├── tools/update-and-push.cmd # 本机每小时采集、提交并推送
@@ -84,8 +88,8 @@ node tools/crawler/crawl.mjs --pages=2 --dry-run   # 只看结果不落盘
 
 ## 部署
 
-- **Qoder Sites / Vercel / Netlify**：站点根目录指向 `web`，构建命令留空；确保 `data/school_data.js` 一并上传
+- **Qoder Sites / Vercel / Netlify**：站点根目录指向 `web`，构建命令留空；确保 `data/school_data.js` 与 `data/status.js` 一并上传
 - **GitHub Pages**：已启用，推送到 `main` 后由 `.github/workflows/pages.yml` 自动发布，线上地址 `https://cxr-omen.github.io/school-info/`
-- **校园服务器**：把 `web/` 下所有文件（含 `data/school_data.js`）上传到网站目录
+- **校园服务器**：把 `web/` 下所有文件（含 `data/school_data.js`、`data/status.js`）上传到网站目录
 
-部署后检查两点：`index.html` 与 `data/` 同级；页面底部能显示「数据更新于 … · 共 N 条信息」。
+部署后检查两点：`index.html` 与 `data/` 同级；页面底部能显示「数据更新于 … · 最近检查 … · 共 N 条信息」。

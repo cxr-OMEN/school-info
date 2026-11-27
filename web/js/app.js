@@ -105,6 +105,7 @@
     briefMonth: $('briefMonth'),
     briefWeek: $('briefWeek'),
     briefUpdated: $('briefUpdated'),
+    briefUpdatedLabel: $('briefUpdatedLabel'),
     themeToggle: $('themeToggle')
   };
 
@@ -338,6 +339,12 @@
     return latest;
   }
 
+  function latestChecked() {
+    const status = window.SCHOOL_STATUS;
+    const value = status && typeof status === 'object' ? String(status.last_checked_at || '').trim() : '';
+    return /^\d{4}-\d{2}-\d{2} \d{2}:\d{2}$/.test(value) ? value : '';
+  }
+
   /* ------------------------------ 渲染 ------------------------------ */
 
   function render() {
@@ -367,7 +374,10 @@
 
     if (dom.briefUpdated) {
       const updated = state.status === 'ready' ? latestUpdated() : '';
-      dom.briefUpdated.textContent = updated ? updated.slice(5) : '—';
+      const checked = state.status === 'ready' ? latestChecked() : '';
+      const shown = checked || updated;
+      dom.briefUpdated.textContent = shown ? shown.slice(5) : '—';
+      if (dom.briefUpdatedLabel) dom.briefUpdatedLabel.textContent = checked ? '最近检查' : '数据更新';
     }
   }
 
@@ -878,6 +888,8 @@
     const parts = [];
     const updated = latestUpdated();
     if (updated) parts.push('数据更新于 ' + updated);
+    const checked = latestChecked();
+    if (checked && checked !== updated) parts.push('最近检查 ' + checked);
     parts.push('共 ' + availableItems().length + ' 条信息');
     dom.footerStatus.textContent = parts.join(' · ');
   }
